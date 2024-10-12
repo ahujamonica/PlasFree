@@ -1,0 +1,343 @@
+/* General Styles */
+body {
+    font-family: 'Futura';
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.3;
+    
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky; /* Makes the header sticky */
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */}
+    
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 28px;
+}
+/* Search Bar Styling */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Center the search bar */
+    width: 40%; /* Adjust width as per your preference */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 20px; /* Adjust padding for the input box */
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 10px; /* Positioning the icon inside the input box */
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Make the search bar visible on hover */
+.search-bar input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    margin-left: auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+
+/* Home Section */
+#home {
+    background-image: url('naja-bertolt-jensen-BJUoZu0mpt0-unsplash.jpg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: rgba(255, 255, 255, 0.916);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#home h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#home button {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#home button:hover {
+    background-color: #ffc107;
+}
+
+#guides {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#guides h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.guides-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.guides-container a {
+    text-decoration: none;
+    color: #2196f3;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #f0f4f8;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.guides-container a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Our Impact Section */
+#impact {
+    position: relative; /* Allows positioning of child elements */
+    background-image: url('lucas-gallone-Q4QjAPMpJRQ-unsplash.jpg'); /* Replace with your wide image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white; /* Text color for visibility */
+}
+
+#impact h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.impact-info {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-around; /* Distributes space evenly between items */
+    max-width: 1200px; /* Limits width for better readability */
+    margin: 0 auto; /* Centers the content */
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background for contrast */
+    padding: 20px; /* Adds some padding around the text */
+    border-radius: 10px; /* Rounds the corners */
+}
+
+.impact-point {
+    flex: 1; /* Allows each point to grow equally */
+    margin: 0 10px; /* Adds horizontal spacing between points */
+    text-align: left; /* Align text to the left */
+}
+
+.impact-point h3 {
+    font-size: 24px; /* Title size for each point */
+    margin-bottom: 10px;
+}
+
+.impact-point p {
+    font-size: 16px; /* Description size for each point */
+    color: #fff; /* Ensure text is white for visibility */
+}
+
+
+
+/* Mauritius Section */
+/* Mauritius Section */
+#mauritius {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: left;
+}
+
+#mauritius h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.mauritius-impact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* This ensures responsiveness on smaller screens */
+}
+
+.mauritius-impact img {
+    width: 300%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.mauritius-impact p {
+    font-size: 18px;
+    color: #333;
+    max-width: 500px; /* Ensures text has a nice width */
+    margin-left: 20px;
+}
+
+/* Sustainable Blogs Section */
+#blogs {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#blogs h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.blog-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Centres Section */
+#centres {
+    background-color: #202020;
+    padding: 60px 20px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+#centres h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact-info, .blog-container {
+        flex-direction: column;
+    }
+}   
+
